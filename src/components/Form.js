@@ -1,4 +1,4 @@
-const Form = ({handleSubmit, setTodo, todo, todos, deleteTodo,toggleComplete }) => {
+const Form = ({handleSubmit, setTodo, todo, todos, deleteTodo, toggleComplete }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -8,8 +8,8 @@ const Form = ({handleSubmit, setTodo, todo, todos, deleteTodo,toggleComplete }) 
           onChange={(e) => setTodo(e.target.value)} value={todo} />
         <button type="submit">Add</button>
         {todos.map((todo) => (
-          <div key={todo.id}>
-            <div>{todo.txt}</div>
+          <div key={todo.id}> 
+          <div>{todo.text}</div>
             <button onClick={() => deleteTodo(todo.id)}>Delete</button>
             <input type="checkbox" onChange={() => toggleComplete(todo.id)} checked={todo.completed} />
           </div>

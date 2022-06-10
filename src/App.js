@@ -24,9 +24,9 @@ const App = () => {
 
     //use spread operator to take todos array and make a new array
     //Concat will add new object todos array
-    setTodos([...todos].concat(newTodo));
+    setTodos([...todos].concat(newTodo))
     //reset input
-    setTodo("");
+    setTodo("")
   };
 
   const deleteTodo = (id) => {
