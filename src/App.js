@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Form from "./components/Form";
 
-const App = () => {
+const App  = () => {
   //Variable todos will be our array
   //setTodos will be the setter function that sets the value of todos
   const [todos, setTodos] = React.useState([]);

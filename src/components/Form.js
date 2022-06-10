@@ -9,7 +9,7 @@ const Form = ({handleSubmit, setTodo, todo, todos, deleteTodo, toggleComplete })
         <button type="submit">Add</button>
         {todos.map((todo) => (
           <div key={todo.id}> 
-          <div>{todo.text}</div>
+          <div className="displayedTodos">{todo.text}</div>
             <button onClick={() => deleteTodo(todo.id)}>Delete</button>
             <input type="checkbox" onChange={() => toggleComplete(todo.id)} checked={todo.completed} />
           </div>
